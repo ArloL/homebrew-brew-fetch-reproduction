@@ -13,18 +13,12 @@ ls -lsa "$(brew --repository)/Library/Taps/issue-20533-repro/homebrew-cask"
 brew desc issue-20533-repro/cask/keepingyouawake
 brew info issue-20533-repro/cask/keepingyouawake
 brew fetch issue-20533-repro/cask/keepingyouawake || true
-brew fetch issue-20533-repro/cask/keepingyouawake || true
-brew fetch issue-20533-repro/cask/keepingyouawake || true
 
 git clone https://github.com/Homebrew/homebrew-cask "$(brew --repository)/Library/Taps/issue-20533-repro-works/homebrew-cask"
-brew fetch issue-20533-repro-works/cask/keepingyouawake || true
-brew fetch issue-20533-repro-works/cask/keepingyouawake || true
 brew fetch issue-20533-repro-works/cask/keepingyouawake || true
 
 ln -s "$(brew --repository)/Library/Taps/issue-20533-repro-works" "$(brew --repository)/Library/Taps/issue-20533-repro-nope"
 
-brew fetch issue-20533-repro-nope/cask/keepingyouawake || true
-brew fetch issue-20533-repro-nope/cask/keepingyouawake || true
 brew fetch issue-20533-repro-nope/cask/keepingyouawake || true
 
 git clone https://github.com/arlol/homebrew-tap.git issue-20533-repro/homebrew-arlol-tap
