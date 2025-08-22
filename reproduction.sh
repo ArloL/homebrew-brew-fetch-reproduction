@@ -17,6 +17,12 @@ brew desc --debug --verbose arlol/brew-fetch-reproduction/powerlevel9k
 brew info --debug --verbose arlol/brew-fetch-reproduction/powerlevel9k
 brew fetch --debug --verbose arlol/brew-fetch-reproduction/powerlevel9k
 
+git clone https://github.com/Homebrew/homebrew-cask issue-20533-repro/homebrew-cask
+ls -lsa "$(brew --repository)/Library/Taps/issue-20533-repro/homebrew-cask"
+brew desc --debug --verbose issue-20533-repro/cask/0-ad
+brew info --debug --verbose issue-20533-repro/cask/0-ad
+brew fetch --debug --verbose issue-20533-repro/cask/0-ad
+
 rm -rf "$(brew --repository)/Library/Taps/arlol"
 rm -rf arlol
 git clone https://github.com/arlol/homebrew-tap.git arlol/homebrew-tap
